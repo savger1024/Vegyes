@@ -14,17 +14,14 @@ namespace GyakorlasCsharpKonzol0926
 
             Dictionary<string, string> felhAdatok = new Dictionary<string, string>();
             List<Dictionary<string, string>> felhLista = new List<Dictionary<string, string>>();
-
             while (true)
             {
                 Adatbekeres("Felhasználónév", felhAdatok);
                 Adatbekeres("Születési év", felhAdatok);
                 Adatbekeres("Város", felhAdatok);
                 Adatbekeres("Email", felhAdatok);
-
                 felhLista.Add(felhAdatok);
-
-
+                
                 Console.WriteLine("Szeretne új adatot? (igen/nem)");
                 string ujra = Console.ReadLine();
                 if (ujra == "nem")
@@ -46,7 +43,6 @@ namespace GyakorlasCsharpKonzol0926
             Console.WriteLine($"{bekerendo}: ");
             string adat = Console.ReadLine();
             menteshelye.Add(bekerendo, adat);
-
         }
         static void Kiiratas(List<Dictionary<string, string>> felhLista, Dictionary<string, string> felhAdatok)
         {
@@ -57,10 +53,7 @@ namespace GyakorlasCsharpKonzol0926
                     foreach (var item in felhAdatok)
                     {
                         Console.WriteLine($"{item.Key}: {item.Value}");
-                    }
-
-                
-                
+                    }                                
             }
             felhAdatok.Clear();
         }
