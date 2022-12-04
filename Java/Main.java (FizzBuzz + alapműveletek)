@@ -1,0 +1,109 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //FizzBuzz
+        /*Scanner scanner = new Scanner(System.in);
+        boolean game = true;
+        String meddig = "";
+        int meddigInt = 0;
+        while (game) {
+            System.out.println( "Írj be egy számot");
+            meddig = scanner.nextLine();
+            try {
+                meddigInt = Integer.parseInt(meddig);
+                System.out.println(meddig);
+                if (meddigInt < 1 || meddigInt > 300) {
+                    System.out.println( "Nincs benne a tartományban (1-300)");
+                }
+                else {
+                    for (int i=1; i<= meddigInt; i++) {
+                        if (i%2==0 && i%3==0 ){
+                            System.out.println("FizzBuzz");
+                        }
+                        else if (i%2==0) {
+                            System.out.println("Fizz");
+                        }
+                        else if (i%3==0) {
+                            System.out.println("Buzz");
+                        }
+                        else {
+                            System.out.println(i);
+                        }
+                    }
+                    game = false;
+                }
+            }
+            catch(Exception e) {
+                System.out.println("Ez nem egy szám!" );
+            }
+        }*/
+
+        //Műveletek
+        /*
+        Scanner scanner = new Scanner(System.in);
+        String elso = "";
+        int elsoInt = 0;
+
+        String masodik = "";
+        int masodikInt = 0;
+
+        String muvelet = "";
+        int muveletInt = 0;
+
+        int eredmeny = 0;
+        boolean program = true;
+        String szoveg = "Bela";
+
+        while (program) {
+            System.out.println("Első szám");
+            elso = scanner.nextLine();
+            System.out.println("Második szám");
+            masodik = scanner.nextLine();
+            System.out.println("Művelet (1:+, 2:-, 3:*, 4:/)");
+            muvelet = scanner.nextLine();
+
+            try {
+                elsoInt = Integer.parseInt(elso);
+                masodikInt = Integer.parseInt(masodik);
+                muveletInt = Integer.parseInt(muvelet);
+
+                if (muveletInt == 1) {
+                    eredmeny = elsoInt + masodikInt;
+                    System.out.println(muvelet);
+                    System.out.println(eredmeny);
+                    program = false;
+                }
+
+                else if (muveletInt == 2) {
+                    eredmeny = elsoInt - masodikInt;
+                    System.out.println("Az eredmény: " + eredmeny);
+                    program = false;
+                }
+                else if (muveletInt == 3) {
+                    eredmeny = elsoInt * masodikInt;
+                    System.out.println("Az eredmény: " + eredmeny);
+                    program = false;
+                }
+                else if (muveletInt == 4) {
+
+                    if (masodikInt == 0) {
+                        System.out.println("Osztó nem lehet nulla");
+                    }
+                    else {
+                        eredmeny = elsoInt / masodikInt;
+                        System.out.println("Az eredmény: " + eredmeny);
+                        program = false;
+                    }
+                }
+                else {
+                    System.out.println(muvelet);
+                    System.out.println("Ez nem egy műveleti jel");
+                }
+            }
+            catch (Exception e) {
+                System.out.println("Az egyik nem szám");
+            }
+        }*/
+    }
+}
